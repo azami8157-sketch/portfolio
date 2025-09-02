@@ -39,7 +39,7 @@ const recipes = [
   {name:"Avocado Toast", country:"USA", ingredients:["avocado","bread","oliveoil"], protein:6, carbs:30, fat:12, calories:250}
 ];
 
-// 4. Submit form
+// 4. Submit form: حداقل 50% مواد لازم در انتخاب کاربر
 const form = document.getElementById('food-form');
 const resultDiv = document.getElementById('result');
 const nutritionDiv = document.getElementById('nutrition');
@@ -48,7 +48,12 @@ form.addEventListener('submit', function(e){
     e.preventDefault();
     const selected = Array.from(document.querySelectorAll('input[type=checkbox]:checked'))
                           .map(chk => chk.value);
-    let matched = recipes.filter(r => r.ingredients.every(i => selected.includes(i)));
+    
+    let matched = recipes.filter(r => {
+        const common = r.ingredients.filter(i => selected.includes(i));
+        return common.length >= Math.ceil(r.ingredients.length / 2);
+    });
+    
     if(matched.length === 0){
         resultDiv.innerHTML = "No matching recipe found.";
         nutritionDiv.innerHTML = "";
