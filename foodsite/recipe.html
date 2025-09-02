@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Details</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    background-color: #1c1c1c;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  #recipe-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+  }
+  #recipe-container img {
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    color: #fff;
+  }
+  table, th, td {
+    border: 1px solid #fff;
+  }
+  th, td {
+    padding: 10px;
+  }
+  #description, #country {
+    margin-top: 20px;
+    font-size: 1.1em;
+  }
+  a {
+    color: #ff4c4c;
+  }
+</style>
+</head>
+<body>
+
+<div id="recipe-container">
+    <h1 id="recipe-name"></h1>
+    <img id="recipe-img" src="" alt="Food Image">
+    <div id="nutrition"></div>
+    <p id="description"></p>
+    <p id="country"></p>
+</div>
+
+<script>
+const recipe = JSON.parse(localStorage.getItem('selectedRecipe'));
+
+if(recipe){
+    document.getElementById('recipe-name').textContent = recipe.name;
+    document.getElementById('recipe-img').src = recipe.image || 'default.jpg';
+    document.getElementById('nutrition').innerHTML = `
+        <table>
+            <tr><th>Protein (g)</th><th>Carbs (g)</th><th>Fat (g)</th><th>Calories</th></tr>
+            <tr>
+                <td>${recipe.protein}</td>
+                <td>${recipe.carbs}</td>
+                <td>${recipe.fat}</td>
+                <td>${recipe.calories}</td>
+            </tr>
+        </table>
+    `;
+    document.getElementById('description').textContent = recipe.description || "Delicious and easy to cook!";
+    document.getElementById('country').textContent = `Origin: ${recipe.country}`;
+}else{
+    document.getElementById('recipe-container').textContent = "No recipe data found.";
+}
+</script>
+
+</body>
+</html>
