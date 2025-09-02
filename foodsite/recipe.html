@@ -5,58 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Details</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-        }
-
-        header {
-            background-color: #c0392b;
-            padding: 20px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        table {
-            margin: 20px auto;
-            border-collapse: collapse;
-            width: 80%;
-            max-width: 500px;
-            background-color: #111;
-        }
-
-        table, th, td {
-            border: 1px solid #fff;
-        }
-
-        th, td {
-            padding: 10px;
-        }
-
-        th {
-            background-color: #c0392b;
-        }
-
-        p#recipe-description {
-            margin-top: 20px;
-            line-height: 1.5em;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1 id="recipe-name">Recipe Name</h1>
+        <h1 id="recipe-name"></h1>
     </header>
 
     <main>
@@ -68,7 +20,6 @@
             <tr><th>Calories</th><td id="recipe-calories"></td></tr>
             <tr><th>Cook Time ⏱</th><td id="recipe-time"></td></tr>
         </table>
-
         <p id="recipe-description"></p>
     </main>
 
