@@ -6,28 +6,35 @@
     <title>Site Web Personnel – Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #111;
-            color: #fff;
-            text-align: center;
-        }
+        /* هماهنگ با هدر باقی صفحات */
         header {
-            background-color: #c0392b;
+            background-color: #27ae60; /* سبز مشابه Animation 2D/3D */
             padding: 20px;
+            text-align: center;
         }
         header h1 {
             margin: 0;
             font-size: 2em;
+            color: #fff;
         }
+        header a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #fff;
+            text-decoration: underline;
+            font-size: 1em;
+        }
+
         main {
             padding: 20px;
+            text-align: center;
+            background-color: #111;
+            color: #fff;
         }
+
         .site-box {
             background-color: #222;
-            border: 2px solid #c0392b;
+            border: 2px solid #27ae60;
             border-radius: 10px;
             padding: 20px;
             margin: 20px auto;
@@ -53,51 +60,49 @@
             padding: 10px;
             border-radius: 5px;
         }
+
         footer {
             margin-top: 40px;
             padding: 10px;
-            background-color: #c0392b;
+            background-color: #27ae60;
+            color: #fff;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Mes Projets Web</h1>
-        <p>Voici quelques exemples de sites que j'ai développés.</p>
+        <h1>Site Web Personnel</h1>
+        <a href="index.html">Retour au portfolio</a>
     </header>
 
     <main>
-        <section id="personal-sites">
-            <h2>Site Web Personnel</h2>
-
-            <div class="site-box">
-                <a href="https://azami8157-sketch.github.io/portfolio/foodsite/" target="_blank">
-                    Food Suggestion
-                </a>
-                <div class="site-info">
-                    Ce site a été développé avec <strong>HTML, CSS et JavaScript</strong> pour suggérer des recettes selon les ingrédients disponibles.
-                </div>
+        <div class="site-box">
+            <a href="https://azami8157-sketch.github.io/portfolio/foodsite/" target="_blank">
+                Food Suggestion
+            </a>
+            <div class="site-info">
+                Ce site a été développé avec <strong>HTML, CSS et JavaScript</strong> pour suggérer des recettes selon les ingrédients disponibles.
             </div>
+        </div>
 
-            <div class="site-box">
-                <a href="https://azami8157-sketch.github.io/portfolio/animation/" target="_blank">
-                    Animation 2D/3D
-                </a>
-                <div class="site-info">
-                    Création d'animations interactives en <strong>HTML, CSS, JavaScript</strong> et intégration de vidéos YouTube.
-                </div>
+        <div class="site-box">
+            <a href="https://azami8157-sketch.github.io/portfolio/animation/" target="_blank">
+                Animation 2D/3D
+            </a>
+            <div class="site-info">
+                Création d'animations interactives en <strong>HTML, CSS et JavaScript</strong> et intégration de vidéos YouTube.
             </div>
+        </div>
 
-            <div class="site-box">
-                <a href="https://azami8157-sketch.github.io/portfolio/youtube-collab/" target="_blank">
-                    Collaborations YouTube
-                </a>
-                <div class="site-info">
-                    Production de visuels et animations pour des chaînes YouTube, développé avec <strong>HTML, CSS et JS</strong>.
-                </div>
+        <div class="site-box">
+            <a href="https://azami8157-sketch.github.io/portfolio/youtube-collab/" target="_blank">
+                Collaborations YouTube
+            </a>
+            <div class="site-info">
+                Production de visuels et animations pour des chaînes YouTube, développé avec <strong>HTML, CSS et JS</strong>.
             </div>
+        </div>
 
-        </section>
     </main>
 
     <footer>
