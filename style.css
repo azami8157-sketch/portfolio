@@ -38,7 +38,7 @@ section#projects h2 {
 }
 
 section#projects h3 {
-    color: #2196F3; /* رنگ متفاوت برای زیرسکشن مدرک‌ها */
+    color: #2196F3; /* رنگ متفاوت برای زیرسکشن‌ها */
     margin-top: 30px;
 }
 
@@ -69,12 +69,23 @@ section#projects li a:hover {
     color: #4CAF50;
 }
 
-/* ===== بخش مدرک‌های Coursera ===== */
-#projects h3 + ul li a {
+/* ===== بخش YouTube ===== */
+#projects li img[alt="YouTube"] {
+    width: 50px;
+    height: 50px;
+}
+
+/* ===== بخش Coursera ===== */
+#projects li img[alt="Coursera"] {
+    width: 50px;
+    height: 50px;
+}
+
+#projects li a[href="coursera.html"] {
     color: #2196F3;
 }
 
-#projects h3 + ul li a:hover {
+#projects li a[href="coursera.html"]:hover {
     color: #0b7dda;
     text-decoration: underline;
 }
