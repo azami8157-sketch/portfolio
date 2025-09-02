@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Suggestion</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Suggestion</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -31,60 +31,59 @@
         <h2>Select Your Ingredients</h2>
         <input type="text" id="ingredient-search" placeholder="Search ingredients...">
         <div id="ingredients-list" class="ingredients-grid">
-            <!-- 50 مواد غذایی نمونه -->
+            <!-- 50 مواد غذایی -->
             <label><input type="checkbox" value="chicken"> Chicken</label>
-            <label><input type="checkbox" value="rice"> Rice</label>
+            <label><input type="checkbox" value="beef"> Beef</label>
+            <label><input type="checkbox" value="pork"> Pork</label>
+            <label><input type="checkbox" value="turkey"> Turkey</label>
+            <label><input type="checkbox" value="fish"> Fish</label>
+            <label><input type="checkbox" value="salmon"> Salmon</label>
+            <label><input type="checkbox" value="tuna"> Tuna</label>
+            <label><input type="checkbox" value="shrimp"> Shrimp</label>
             <label><input type="checkbox" value="egg"> Egg</label>
+            <label><input type="checkbox" value="milk"> Milk</label>
+            <label><input type="checkbox" value="cheese"> Cheese</label>
+            <label><input type="checkbox" value="yogurt"> Yogurt</label>
+            <label><input type="checkbox" value="butter"> Butter</label>
+            <label><input type="checkbox" value="cream"> Cream</label>
+            <label><input type="checkbox" value="rice"> Rice</label>
+            <label><input type="checkbox" value="pasta"> Pasta</label>
+            <label><input type="checkbox" value="bread"> Bread</label>
+            <label><input type="checkbox" value="potato"> Potato</label>
+            <label><input type="checkbox" value="sweetpotato"> Sweet Potato</label>
             <label><input type="checkbox" value="tomato"> Tomato</label>
             <label><input type="checkbox" value="onion"> Onion</label>
-            <label><input type="checkbox" value="cheese"> Cheese</label>
-            <label><input type="checkbox" value="beef"> Beef</label>
-            <label><input type="checkbox" value="pasta"> Pasta</label>
-            <label><input type="checkbox" value="lemon"> Lemon</label>
-            <label><input type="checkbox" value="fish"> Fish</label>
+            <label><input type="checkbox" value="garlic"> Garlic</label>
             <label><input type="checkbox" value="carrot"> Carrot</label>
             <label><input type="checkbox" value="broccoli"> Broccoli</label>
             <label><input type="checkbox" value="cucumber"> Cucumber</label>
             <label><input type="checkbox" value="lettuce"> Lettuce</label>
-            <label><input type="checkbox" value="oliveoil"> Olive Oil</label>
-            <label><input type="checkbox" value="garlic"> Garlic</label>
-            <label><input type="checkbox" value="mushroom"> Mushroom</label>
-            <label><input type="checkbox" value="pepper"> Pepper</label>
             <label><input type="checkbox" value="spinach"> Spinach</label>
-            <label><input type="checkbox" value="bacon"> Bacon</label>
-            <label><input type="checkbox" value="cream"> Cream</label>
-            <label><input type="checkbox" value="yogurt"> Yogurt</label>
-            <label><input type="checkbox" value="tortilla"> Tortilla</label>
-            <label><input type="checkbox" value="chili"> Chili</label>
-            <label><input type="checkbox" value="lemongrass"> Lemongrass</label>
-            <label><input type="checkbox" value="beansprouts"> Beansprouts</label>
-            <label><input type="checkbox" value="seaweed"> Seaweed</label>
-            <label><input type="checkbox" value="shrimp"> Shrimp</label>
-            <label><input type="checkbox" value="celery"> Celery</label>
+            <label><input type="checkbox" value="bellpepper"> Bell Pepper</label>
+            <label><input type="checkbox" value="cabbage"> Cabbage</label>
+            <label><input type="checkbox" value="mushroom"> Mushroom</label>
+            <label><input type="checkbox" value="corn"> Corn</label>
+            <label><input type="checkbox" value="peas"> Peas</label>
             <label><input type="checkbox" value="lentils"> Lentils</label>
             <label><input type="checkbox" value="chickpeas"> Chickpeas</label>
+            <label><input type="checkbox" value="beansprouts"> Beansprouts</label>
             <label><input type="checkbox" value="basil"> Basil</label>
-            <label><input type="checkbox" value="bellpepper"> Bell Pepper</label>
-            <label><input type="checkbox" value="mayo"> Mayonnaise</label>
-            <label><input type="checkbox" value="potato"> Potato</label>
-            <label><input type="checkbox" value="corn"> Corn</label>
+            <label><input type="checkbox" value="oregano"> Oregano</label>
+            <label><input type="checkbox" value="parsley"> Parsley</label>
+            <label><input type="checkbox" value="oliveoil"> Olive Oil</label>
+            <label><input type="checkbox" value="lemon"> Lemon</label>
+            <label><input type="checkbox" value="lime"> Lime</label>
             <label><input type="checkbox" value="apple"> Apple</label>
             <label><input type="checkbox" value="banana"> Banana</label>
             <label><input type="checkbox" value="orange"> Orange</label>
-            <label><input type="checkbox" value="pork"> Pork</label>
-            <label><input type="checkbox" value="turkey"> Turkey</label>
-            <label><input type="checkbox" value="salmon"> Salmon</label>
-            <label><input type="checkbox" value="tuna"> Tuna</label>
-            <label><input type="checkbox" value="bread"> Bread</label>
-            <label><input type="checkbox" value="butter"> Butter</label>
             <label><input type="checkbox" value="honey"> Honey</label>
-            <label><input type="checkbox" value="oregano"> Oregano</label>
-            <label><input type="checkbox" value="parsley"> Parsley</label>
-            <label><input type="checkbox" value="cabbage"> Cabbage</label>
+            <label><input type="checkbox" value="chili"> Chili</label>
+            <label><input type="checkbox" value="mayonnaise"> Mayonnaise</label>
+            <label><input type="checkbox" value="bacon"> Bacon</label>
+            <label><input type="checkbox" value="tortilla"> Tortilla</label>
+            <label><input type="checkbox" value="lemongrass"> Lemongrass</label>
         </div>
         <button id="submit-btn">Get Recipe</button>
-        <div id="result"></div>
-        <div id="nutrition"></div>
     </section>
 </main>
 
