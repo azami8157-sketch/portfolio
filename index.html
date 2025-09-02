@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – [Ton Nom]</title>
+  <meta name="description" content="Portfolio simple et propre pour dossier Campus France : formation, compétences et projets (web, animation, collaborations YouTube)." />
+  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:title" content="Portfolio – [Ton Nom]" />
+  <meta property="og:description" content="Projets web, animation et multimédia." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="style.css" as="style" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="Aller à l'accueil">[Ton Nom]</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#formation">Formation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="accueil" class="hero">
+    <div class="hero-inner container">
+      <div class="hero-text">
+        <p class="eyebrow">Portfolio • Multimédia & Web</p>
+        <h1>Bonjour, je suis <span class="accent">[Ton Nom]</span>.</h1>
+        <p class="lead">
+          Étudiant·e en informatique et création multimédia (animation, web, design).
+          Je prépare mon dossier pour <strong>Campus France</strong> et voici une sélection de mes travaux.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projets">Voir mes projets</a>
+          <a class="btn ghost" href="assets/CV_[Ton_Nom].pdf" download>Télécharger mon CV</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/cover.svg" alt="Illustration abstraite de création numérique" />
+      </div>
+    </div>
+  </main>
+
+  <section id="projets" class="section">
+    <div class="container">
+      <h2>Projets sélectionnés</h2>
+      <p class="section-lead">Quelques exemples représentatifs (site web, animation 2D/3D, collaborations YouTube). Cliquez pour ouvrir.</p>
+
+      <div class="grid projects">
+        <!-- Projet 1: Site web -->
+        <article class="card">
+          <a class="card-link" href="[LIEN_SITE_WEB]" target="_blank" rel="noopener">
+            <img src="assets/placeholder-site.svg" alt="Aperçu du site web" />
+            <div class="card-body">
+              <h3>Site web personnel</h3>
+              <p>Design et développement (HTML, CSS, JS). Responsive & accessible.</p>
+              <ul class="tags">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+            </div>
+          </a>
+        </article>
+
+        <!-- Projet 2: Animation -->
+        <article class="card">
+          <a class="card-link" href="[LIEN_VIDEO_ANIMATION]" target="_blank" rel="noopener">
+            <img src="assets/placeholder-animation.svg" alt="Aperçu d'une animation 2D/3D" />
+            <div class="card-body">
+              <h3>Animation 2D courte</h3>
+              <p>Storyboard, design, motion. Réalisée avec After Effects / [outil].</p>
+              <ul class="tags">
+                <li>Motion</li><li>Design</li><li>After Effects</li>
+              </ul>
+            </div>
+          </a>
+        </article>
+
+        <!-- Projet 3: Collaboration YouTube -->
+        <article class="card">
+          <a class="card-link" href="[LIEN_CHAINE_YOUTUBE]" target="_blank" rel="noopener">
+            <img src="assets/placeholder-youtube.svg" alt="Aperçu d'une chaîne YouTube" />
+            <div class="card-body">
+              <h3>Collaboration YouTube</h3>
+              <p>Création de visuels/animations pour la chaîne <strong>[Nom de la chaîne]</strong>.</p>
+              <ul class="tags">
+                <li>Branding</li><li>Montage</li><li>Animation</li>
+              </ul>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="competences" class="section alt">
+    <div class="container">
+      <h2>Compétences</h2>
+      <div class="grid skills">
+        <div class="skill">
+          <h3>Dév. Front-end</h3>
+          <p>HTML, CSS, bases de JavaScript. Bonnes pratiques d’accessibilité et responsive.</p>
+        </div>
+        <div class="skill">
+          <h3>Animation & Montage</h3>
+          <p>Animation 2D/3D, motion design, montage vidéo (After Effects, [logiciels]).</p>
+        </div>
+        <div class="skill">
+          <h3>Design</h3>
+          <p>UX/UI de base, retouche et création graphique (Photoshop, Illustrator).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="formation" class="section">
+    <div class="container">
+      <h2>Formation</h2>
+      <ul class="timeline">
+        <li>
+          <div class="dot" aria-hidden="true"></div>
+          <div class="time-body">
+            <h3>2020 – 2022 • Diplôme professionnel</h3>
+            <p>Informatique et production de contenu multimédia (Iran).</p>
+          </div>
+        </li>
+        <li>
+          <div class="dot" aria-hidden="true"></div>
+          <div class="time-body">
+            <h3>2022 – 2024 • Certificats en ligne</h3>
+            <p>Programmation, création numérique – Coursera.</p>
+          </div>
+        </li>
+        <li>
+          <div class="dot" aria-hidden="true"></div>
+          <div class="time-body">
+            <h3>2021 • Certificat TTC</h3>
+            <p>Teacher Training Course (pédagogie). (*Optionnel d'afficher ici.)</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Disponible pour échanges concernant mon dossier Campus France et mes projets.</p>
+      <div class="contact-row">
+        <a class="btn" href="mailto:[ton.email@example.com]">Email</a>
+        <a class="btn" href="[LIEN_BEHANCE_OU_GITHUB]">Portfolio complet</a>
+        <a class="btn" href="[LIEN_LINKEDIN]">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> [Ton Nom]. Tous droits réservés.</span>
+      <a href="#accueil" class="to-top" aria-label="Revenir en haut">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
