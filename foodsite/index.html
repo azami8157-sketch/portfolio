@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Suggestion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>🍴 Delicious Food Ideas</h1>
+  </header>
+
+  <!-- Introduction -->
+  <section class="intro">
+    <h2>Welcome!</h2>
+    <p>
+      Discover what you can cook with the ingredients you already have at home.<br>
+      <strong>EN:</strong> Cooking is an adventure! Select your ingredients and get recipe ideas.<br>
+      <strong>FR:</strong> Cuisiner est une aventure ! Choisissez vos ingrédients et découvrez des idées de recettes.
+    </p>
+  </section>
+
+  <!-- Ingredients Table -->
+  <section class="ingredients">
+    <h2>Select your ingredients</h2>
+    <form id="food-form">
+      <table>
+        <thead>
+          <tr>
+            <th>Ingredient</th>
+            <th>Select</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fish</td>
+            <td><input type="checkbox" value="fish"></td>
+          </tr>
+          <tr>
+            <td>Rice</td>
+            <td><input type="checkbox" value="rice"></td>
+          </tr>
+          <tr>
+            <td>Lemon</td>
+            <td><input type="checkbox" value="lemon"></td>
+          </tr>
+          <tr>
+            <td>Chicken</td>
+            <td><input type="checkbox" value="chicken"></td>
+          </tr>
+          <tr>
+            <td>Pasta</td>
+            <td><input type="checkbox" value="pasta"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="submit">Get Recipe</button>
+    </form>
+
+    <!-- Result -->
+    <div id="result"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Food Suggestion – Sample Site</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
