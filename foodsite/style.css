@@ -72,6 +72,12 @@ label {
     cursor: pointer;
 }
 
+input[type=text] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
 button {
     padding: 10px 20px;
     background-color: #ff0000;
