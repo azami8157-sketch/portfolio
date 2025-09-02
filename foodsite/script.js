@@ -25,18 +25,39 @@ searchInput.addEventListener('keyup', function(){
     });
 });
 
-// 3. Recipes data
+// 3. Recipes data (30 نمونه واقعی)
 const recipes = [
-  {name:"Grilled Fish with Lemon Rice", country:"Korea", ingredients:["fish","rice","lemon"], protein:25, carbs:40, fat:8, calories:350},
-  {name:"Chicken Fried Rice", country:"China", ingredients:["chicken","rice","egg","onion"], protein:20, carbs:45, fat:10, calories:400},
-  {name:"Creamy Chicken Pasta", country:"Italy", ingredients:["chicken","pasta","cream","cheese"], protein:22, carbs:50, fat:15, calories:500},
-  {name:"Veggie Stir Fry", country:"China", ingredients:["broccoli","carrot","bellpepper","soy sauce"], protein:8, carbs:20, fat:5, calories:180},
-  {name:"Lemon Butter Pasta", country:"Italy", ingredients:["pasta","lemon","butter"], protein:10, carbs:55, fat:12, calories:380},
-  {name:"Oatmeal with Banana", country:"USA", ingredients:["oat","banana","milk"], protein:6, carbs:35, fat:3, calories:200},
-  {name:"Tofu Salad", country:"Japan", ingredients:["tofu","lettuce","carrot","cucumber"], protein:15, carbs:10, fat:5, calories:180},
-  {name:"Chocolate Almond Dessert", country:"France", ingredients:["chocolate","almond","milk","honey"], protein:8, carbs:40, fat:18, calories:320},
-  {name:"Egg Fried Rice", country:"China", ingredients:["egg","rice","onion","soy sauce"], protein:12, carbs:45, fat:8, calories:370},
-  {name:"Avocado Toast", country:"USA", ingredients:["avocado","bread","oliveoil"], protein:6, carbs:30, fat:12, calories:250}
+  {name:"Grilled Chicken Salad", country:"USA", ingredients:["chicken","lettuce","tomato","cucumber","oliveoil"], protein:30, carbs:10, fat:12, calories:250},
+  {name:"Chicken Fried Rice", country:"China", ingredients:["chicken","rice","egg","onion","soy sauce"], protein:20, carbs:45, fat:10, calories:400},
+  {name:"Sushi Rolls", country:"Japan", ingredients:["rice","seaweed","fish","cucumber"], protein:15, carbs:50, fat:5, calories:300},
+  {name:"Pasta Carbonara", country:"Italy", ingredients:["pasta","egg","cheese","bacon","cream"], protein:25, carbs:55, fat:20, calories:550},
+  {name:"Beef Stir Fry", country:"China", ingredients:["beef","broccoli","carrot","soy sauce","garlic"], protein:28, carbs:15, fat:12, calories:350},
+  {name:"Caprese Salad", country:"Italy", ingredients:["tomato","cheese","basil","oliveoil"], protein:10, carbs:5, fat:12, calories:180},
+  {name:"Veggie Omelette", country:"France", ingredients:["egg","onion","bellpepper","mushroom"], protein:15, carbs:5, fat:10, calories:200},
+  {name:"Lentil Soup", country:"Middle East", ingredients:["lentils","onion","carrot","celery","tomato"], protein:12, carbs:20, fat:5, calories:180},
+  {name:"Falafel Wrap", country:"Middle East", ingredients:["chickpeas","lettuce","tomato","tortilla","yogurt"], protein:14, carbs:40, fat:10, calories:300},
+  {name:"Beef Tacos", country:"Mexico", ingredients:["beef","tortilla","tomato","lettuce","cheese"], protein:22, carbs:30, fat:15, calories:400},
+  {name:"Paella", country:"Spain", ingredients:["rice","chicken","seafood","pepper","tomato"], protein:25, carbs:60, fat:12, calories:500},
+  {name:"Kimchi Fried Rice", country:"Korea", ingredients:["rice","kimchi","egg","onion","carrot"], protein:15, carbs:50, fat:8, calories:350},
+  {name:"Bibimbap", country:"Korea", ingredients:["rice","beef","spinach","carrot","egg"], protein:20, carbs:55, fat:10, calories:450},
+  {name:"Tom Yum Soup", country:"Thailand", ingredients:["shrimp","mushroom","lemon","chili","lemongrass"], protein:18, carbs:8, fat:5, calories:120},
+  {name:"Pad Thai", country:"Thailand", ingredients:["rice","egg","shrimp","peanut","bean sprouts"], protein:20, carbs:55, fat:12, calories:400},
+  {name:"Shakshuka", country:"Middle East", ingredients:["egg","tomato","onion","bellpepper","garlic"], protein:12, carbs:10, fat:10, calories:180},
+  {name:"Bulgur Pilaf", country:"Turkey", ingredients:["bulgur","tomato","onion","butter"], protein:8, carbs:40, fat:8, calories:220},
+  {name:"Moussaka", country:"Greece", ingredients:["eggplant","beef","potato","tomato","cheese"], protein:22, carbs:30, fat:18, calories:450},
+  {name:"Ratatouille", country:"France", ingredients:["eggplant","zucchini","tomato","bellpepper","onion"], protein:5, carbs:15, fat:5, calories:150},
+  {name:"Couscous with Vegetables", country:"Morocco", ingredients:["couscous","carrot","zucchini","chickpeas","tomato"], protein:10, carbs:50, fat:8, calories:300},
+  {name:"Avocado Toast", country:"USA", ingredients:["bread","avocado","oliveoil"], protein:6, carbs:30, fat:12, calories:250},
+  {name:"Egg Fried Rice", country:"China", ingredients:["rice","egg","onion","soy sauce"], protein:12, carbs:45, fat:8, calories:370},
+  {name:"Tofu Stir Fry", country:"Japan", ingredients:["tofu","broccoli","carrot","soy sauce","garlic"], protein:18, carbs:15, fat:8, calories:220},
+  {name:"Chocolate Cake", country:"France", ingredients:["flour","egg","butter","sugar","chocolate"], protein:6, carbs:60, fat:20, calories:400},
+  {name:"Banana Oatmeal", country:"USA", ingredients:["banana","oat","milk","honey"], protein:6, carbs:35, fat:3, calories:200},
+  {name:"Caesar Salad", country:"USA", ingredients:["lettuce","chicken","cheese","bread","oliveoil"], protein:20, carbs:10, fat:15, calories:250},
+  {name:"Pancakes", country:"USA", ingredients:["flour","egg","milk","butter","honey"], protein:8, carbs:50, fat:12, calories:300},
+  {name:"Greek Salad", country:"Greece", ingredients:["tomato","cucumber","cheese","oliveoil","onion"], protein:8, carbs:10, fat:12, calories:180},
+  {name:"Tomato Soup", country:"France", ingredients:["tomato","onion","garlic","cream","oliveoil"], protein:5, carbs:15, fat:8, calories:150},
+  {name:"Spaghetti Bolognese", country:"Italy", ingredients:["pasta","beef","tomato","onion","carrot"], protein:25, carbs:60, fat:12, calories:500},
+  {name:"Vegetable Curry", country:"India", ingredients:["potato","carrot","peas","tomato","onion"], protein:8, carbs:35, fat:10, calories:250}
 ];
 
 // 4. Submit form: حداقل 50% مواد لازم در انتخاب کاربر
