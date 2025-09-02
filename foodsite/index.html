@@ -1,100 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Food Suggestion</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Suggestion</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>🍴 Delicious Food Ideas</h1>
-  <div class="menu">
-    <button id="menu-btn">☰ Menu</button>
-    <div id="dropdown" class="dropdown-content">
-      <p><strong>Contact</strong></p>
-      <p>Name: Mohamad Amin Azami</p>
-      <p>Email: <a href="mailto:Azami8157@gmail.com">Azami8157@gmail.com</a></p>
+    <h1>Food Suggestion</h1>
+    <p class="header-text">
+        Welcome!<br>
+        Discover what you can cook with the ingredients you already have at home.<br>
+        EN: Cooking is an adventure! Select your ingredients and get recipe ideas.<br>
+        FR: Cuisiner est une aventure ! Choisissez vos ingrédients et découvrez des idées de recettes.
+    </p>
+
+    <div class="dropdown">
+        <button id="menu-btn" class="dropbtn">Contact Us</button>
+        <div id="dropdown" class="dropdown-content">
+            <p><strong>Name:</strong> Mohamad Amin Azami</p>
+            <p><strong>Email:</strong> Azami8157@gmail.com</p>
+        </div>
     </div>
-  </div>
 </header>
 
-<section class="intro">
-  <h2>Welcome!</h2>
-  <p>
-    Discover what you can cook with the ingredients you already have at home.<br>
-    <strong>EN:</strong> Cooking is an adventure! Select your ingredients and get recipe ideas.<br>
-    <strong>FR:</strong> Cuisiner est une aventure ! Choisissez vos ingrédients et découvrez des idées de recettes.
-  </p>
-</section>
-
-<section class="ingredients">
-  <h2>Select your ingredients</h2>
-  <input type="text" id="search" placeholder="Search ingredient...">
-  <form id="food-form">
-    <table>
-      <thead>
-        <tr><th>Ingredient</th><th>Select</th></tr>
-      </thead>
-      <tbody>
-        <!-- 50–60 مواد غذایی -->
-        <tr><td>Fish</td><td><input type="checkbox" value="fish"></td></tr>
-        <tr><td>Chicken</td><td><input type="checkbox" value="chicken"></td></tr>
-        <tr><td>Beef</td><td><input type="checkbox" value="beef"></td></tr>
-        <tr><td>Pork</td><td><input type="checkbox" value="pork"></td></tr>
-        <tr><td>Lamb</td><td><input type="checkbox" value="lamb"></td></tr>
-        <tr><td>Rice</td><td><input type="checkbox" value="rice"></td></tr>
-        <tr><td>Pasta</td><td><input type="checkbox" value="pasta"></td></tr>
-        <tr><td>Potato</td><td><input type="checkbox" value="potato"></td></tr>
-        <tr><td>Tomato</td><td><input type="checkbox" value="tomato"></td></tr>
-        <tr><td>Onion</td><td><input type="checkbox" value="onion"></td></tr>
-        <tr><td>Garlic</td><td><input type="checkbox" value="garlic"></td></tr>
-        <tr><td>Carrot</td><td><input type="checkbox" value="carrot"></td></tr>
-        <tr><td>Spinach</td><td><input type="checkbox" value="spinach"></td></tr>
-        <tr><td>Broccoli</td><td><input type="checkbox" value="broccoli"></td></tr>
-        <tr><td>Mushroom</td><td><input type="checkbox" value="mushroom"></td></tr>
-        <tr><td>Lemon</td><td><input type="checkbox" value="lemon"></td></tr>
-        <tr><td>Orange</td><td><input type="checkbox" value="orange"></td></tr>
-        <tr><td>Apple</td><td><input type="checkbox" value="apple"></td></tr>
-        <tr><td>Banana</td><td><input type="checkbox" value="banana"></td></tr>
-        <tr><td>Strawberry</td><td><input type="checkbox" value="strawberry"></td></tr>
-        <tr><td>Cheese</td><td><input type="checkbox" value="cheese"></td></tr>
-        <tr><td>Egg</td><td><input type="checkbox" value="egg"></td></tr>
-        <tr><td>Tofu</td><td><input type="checkbox" value="tofu"></td></tr>
-        <tr><td>Milk</td><td><input type="checkbox" value="milk"></td></tr>
-        <tr><td>Butter</td><td><input type="checkbox" value="butter"></td></tr>
-        <tr><td>Olive Oil</td><td><input type="checkbox" value="oliveoil"></td></tr>
-        <tr><td>Soy Sauce</td><td><input type="checkbox" value="soysauce"></td></tr>
-        <tr><td>Ginger</td><td><input type="checkbox" value="ginger"></td></tr>
-        <tr><td>Chili</td><td><input type="checkbox" value="chili"></td></tr>
-        <tr><td>Basil</td><td><input type="checkbox" value="basil"></td></tr>
-        <tr><td>Oregano</td><td><input type="checkbox" value="oregano"></td></tr>
-        <tr><td>Cucumber</td><td><input type="checkbox" value="cucumber"></td></tr>
-        <tr><td>Bell Pepper</td><td><input type="checkbox" value="bellpepper"></td></tr>
-        <tr><td>Celery</td><td><input type="checkbox" value="celery"></td></tr>
-        <tr><td>Avocado</td><td><input type="checkbox" value="avocado"></td></tr>
-        <tr><td>Chocolate</td><td><input type="checkbox" value="chocolate"></td></tr>
-        <tr><td>Yogurt</td><td><input type="checkbox" value="yogurt"></td></tr>
-        <tr><td>Honey</td><td><input type="checkbox" value="honey"></td></tr>
-        <tr><td>Peanut</td><td><input type="checkbox" value="peanut"></td></tr>
-        <tr><td>Almond</td><td><input type="checkbox" value="almond"></td></tr>
-        <tr><td>Walnut</td><td><input type="checkbox" value="walnut"></td></tr>
-        <tr><td>Oat</td><td><input type="checkbox" value="oat"></td></tr>
-        <tr><td>Quinoa</td><td><input type="checkbox" value="quinoa"></td></tr>
-        <tr><td>Corn</td><td><input type="checkbox" value="corn"></td></tr>
-        <tr><td>Lettuce</td><td><input type="checkbox" value="lettuce"></td></tr>
-      </tbody>
-    </table>
-    <button type="submit">Get Recipe</button>
-  </form>
-
-  <div id="result"></div>
-  <div id="nutrition"></div>
-</section>
+<main>
+    <section id="ingredients-section">
+        <h2>Select Your Ingredients</h2>
+        <form id="food-form">
+            <div class="ingredients-grid">
+                <!-- مثال مواد غذایی، می‌توانید همه 50+ را اضافه کنید -->
+                <label><input type="checkbox" value="chicken"> Chicken</label>
+                <label><input type="checkbox" value="rice"> Rice</label>
+                <label><input type="checkbox" value="egg"> Egg</label>
+                <label><input type="checkbox" value="tomato"> Tomato</label>
+                <label><input type="checkbox" value="onion"> Onion</label>
+                <label><input type="checkbox" value="lemon"> Lemon</label>
+                <label><input type="checkbox" value="cheese"> Cheese</label>
+                <label><input type="checkbox" value="beef"> Beef</label>
+                <label><input type="checkbox" value="pasta"> Pasta</label>
+                <label><input type="checkbox" value="fish"> Fish</label>
+                <label><input type="checkbox" value="carrot"> Carrot</label>
+                <label><input type="checkbox" value="broccoli"> Broccoli</label>
+                <label><input type="checkbox" value="cucumber"> Cucumber</label>
+                <label><input type="checkbox" value="lettuce"> Lettuce</label>
+                <label><input type="checkbox" value="oliveoil"> Olive Oil</label>
+            </div>
+            <button type="submit">Get Recipe</button>
+        </form>
+        <div id="result"></div>
+        <div id="nutrition"></div>
+    </section>
+</main>
 
 <footer>
-  <p>© 2025 Tasty Ideas – Cook Smart!</p>
+    <p>© 2025 Amin's Kitchen – Discover Recipes Easily!</p>
 </footer>
 
 <script src="script.js"></script>
