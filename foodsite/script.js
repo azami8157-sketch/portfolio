@@ -25,19 +25,19 @@ searchInput.addEventListener('input', function(){
     });
 });
 
-// لیست 50 غذا با عکس‌های مستقیم و واقعی
+// لیست 50+ غذا بدون عکس
 const recipes = [
-  {name:"Grilled Chicken Salad", country:"USA", ingredients:["chicken","lettuce","tomato","cucumber","olive oil"], protein:30, carbs:10, fat:12, calories:250, description:"A healthy salad with grilled chicken and fresh vegetables.", image:"https://images.unsplash.com/photo-1604908177528-8d1091d2e8d5?crop=entropy&cs=tinysrgb&fit=max&h=400&w=400"},
-  {name:"Chicken Fried Rice", country:"China", ingredients:["chicken","rice","egg","onion"], protein:20, carbs:45, fat:10, calories:400, description:"Classic Chinese fried rice with chicken and vegetables.", image:"https://images.unsplash.com/photo-1603078063228-1f9d8c63c2a2?crop=entropy&cs=tinysrgb&fit=max&h=400&w=400"},
-  {name:"Sushi Rolls", country:"Japan", ingredients:["rice","fish","cucumber"], protein:15, carbs:50, fat:5, calories:300, description:"Delicious sushi rolls with fresh fish and rice.", image:"https://images.unsplash.com/photo-1553621042-f6e147245754?crop=entropy&cs=tinysrgb&fit=max&h=400&w=400"},
-  {name:"Pasta Carbonara", country:"Italy", ingredients:["pasta","egg","cheese","bacon"], protein:25, carbs:55, fat:20, calories:550, description:"Creamy Italian pasta with eggs, cheese, and bacon.", image:"https://images.unsplash.com/photo-1600718379182-1e49f8170e68?crop=entropy&cs=tinysrgb&fit=max&h=400&w=400"},
-  {name:"Beef Stir Fry", country:"China", ingredients:["beef","broccoli","carrot","onion"], protein:28, carbs:15, fat:12, calories:350, description:"Quick beef stir fry with fresh vegetables.", image:"https://images.unsplash.com/photo-1603046891740-d0c5e8497d5f?crop=entropy&cs=tinysrgb&fit=max&h=400&w=400"},
-  {name:"Caprese Salad", country:"Italy", ingredients:["tomato","cheese","basil","olive oil"], protein:10, carbs:5, fat:12, calories:180, description:"Fresh Italian salad with tomato, mozzarella, and basil.", image:"https://images.unsplash.com/photo-1604908177412-2c62a1d7b091?crop=entropy&cs=tinysrgb&fit=max&h=400&w=400"},
-  {name:"Veggie Omelette", country:"France", ingredients:["egg","onion","bell pepper","cheese"], protein:15, carbs:5, fat:10, calories:200, description:"Classic French omelette with vegetables and cheese.", image:"https://images.unsplash.com/photo-1617196030768-0b4e2c6d9e4c?crop=entropy&cs=tinysrgb&fit=max&h=400&w=400"},
-  {name:"Lemon Fish", country:"Mediterranean", ingredients:["fish","lemon","olive oil"], protein:20, carbs:0, fat:8, calories:180, description:"Light Mediterranean fish with lemon and olive oil.", image:"https://images.unsplash.com/photo-1600727967508-5ed4b3d4469b?crop=entropy&cs=tinysrgb&fit=max&h=400&w=400"},
-  {name:"Beef Pasta", country:"Italy", ingredients:["beef","pasta","tomato","cheese"], protein:25, carbs:50, fat:15, calories:450, description:"Italian-style pasta with beef and tomato sauce.", image:"https://images.unsplash.com/photo-1600628422921-fcc61eb6c8d1?crop=entropy&cs=tinysrgb&fit=max&h=400&w=400"},
-  {name:"Cheese Omelette", country:"France", ingredients:["egg","cheese","onion"], protein:12, carbs:2, fat:10, calories:150, description:"Simple and delicious cheese omelette.", image:"https://images.unsplash.com/photo-1603038985265-6c96750478f1?crop=entropy&cs=tinysrgb&fit=max&h=400&w=400"},
-  // ... ادامه دهید تا 50 غذا با همین ساختار و لینک عکس واقعی ...
+  {name:"Grilled Chicken Salad", origin:"USA", ingredients:["chicken","lettuce","tomato","cucumber","olive oil"], protein:30, carbs:10, fat:12, calories:250, cookTime:"20 min", description:"A healthy salad with grilled chicken and fresh vegetables."},
+  {name:"Chicken Fried Rice", origin:"China", ingredients:["chicken","rice","egg","onion"], protein:20, carbs:45, fat:10, calories:400, cookTime:"30 min", description:"Classic Chinese fried rice with chicken and vegetables."},
+  {name:"Sushi Rolls", origin:"Japan", ingredients:["rice","fish","cucumber"], protein:15, carbs:50, fat:5, calories:300, cookTime:"45 min", description:"Delicious sushi rolls with fresh fish and rice."},
+  {name:"Pasta Carbonara", origin:"Italy", ingredients:["pasta","egg","cheese","bacon"], protein:25, carbs:55, fat:20, calories:550, cookTime:"25 min", description:"Creamy Italian pasta with eggs, cheese, and bacon."},
+  {name:"Beef Stir Fry", origin:"China", ingredients:["beef","broccoli","carrot","onion"], protein:28, carbs:15, fat:12, calories:350, cookTime:"20 min", description:"Quick beef stir fry with fresh vegetables."},
+  {name:"Caprese Salad", origin:"Italy", ingredients:["tomato","cheese","basil","olive oil"], protein:10, carbs:5, fat:12, calories:180, cookTime:"10 min", description:"Fresh Italian salad with tomato, mozzarella, and basil."},
+  {name:"Veggie Omelette", origin:"France", ingredients:["egg","onion","bell pepper","cheese"], protein:15, carbs:5, fat:10, calories:200, cookTime:"15 min", description:"Classic French omelette with vegetables and cheese."},
+  {name:"Lemon Fish", origin:"Mediterranean", ingredients:["fish","lemon","olive oil"], protein:20, carbs:0, fat:8, calories:180, cookTime:"25 min", description:"Light Mediterranean fish with lemon and olive oil."},
+  {name:"Beef Pasta", origin:"Italy", ingredients:["beef","pasta","tomato","cheese"], protein:25, carbs:50, fat:15, calories:450, cookTime:"30 min", description:"Italian-style pasta with beef and tomato sauce."},
+  {name:"Cheese Omelette", origin:"France", ingredients:["egg","cheese","onion"], protein:12, carbs:2, fat:10, calories:150, cookTime:"10 min", description:"Simple and delicious cheese omelette."},
+  // ادامه دهید تا 50+ غذا با همین ساختار
 ];
 
 // دکمه Get Recipe
