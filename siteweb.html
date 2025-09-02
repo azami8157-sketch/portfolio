@@ -5,6 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Web Personnel – Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            background-color: #c0392b;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        main {
+            padding: 20px;
+        }
+        .site-box {
+            background-color: #222;
+            border: 2px solid #c0392b;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            transition: transform 0.2s;
+        }
+        .site-box:hover {
+            transform: scale(1.05);
+        }
+        .site-box a {
+            font-size: 1.5em;
+            color: #f1c40f;
+            text-decoration: none;
+        }
+        .site-box a:hover {
+            text-decoration: underline;
+        }
+        .site-info {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #ecf0f1;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #c0392b;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,18 +69,34 @@
     <main>
         <section id="personal-sites">
             <h2>Site Web Personnel</h2>
-            <ul>
-                <li>
-                    <span>
-                        <a href="https://azami8157-sketch.github.io/portfolio/foodsite/" target="_blank">
-                            Food Suggestion – Site Web Personnel
-                        </a>
-                        <br>
-                        <small>Ce site a été développé avec HTML, CSS et JavaScript pour suggérer des recettes selon les ingrédients disponibles.</small>
-                    </span>
-                </li>
-                <!-- می‌توانید نمونه‌های دیگر را اینجا اضافه کنید -->
-            </ul>
+
+            <div class="site-box">
+                <a href="https://azami8157-sketch.github.io/portfolio/foodsite/" target="_blank">
+                    Food Suggestion
+                </a>
+                <div class="site-info">
+                    Ce site a été développé avec <strong>HTML, CSS et JavaScript</strong> pour suggérer des recettes selon les ingrédients disponibles.
+                </div>
+            </div>
+
+            <div class="site-box">
+                <a href="https://azami8157-sketch.github.io/portfolio/animation/" target="_blank">
+                    Animation 2D/3D
+                </a>
+                <div class="site-info">
+                    Création d'animations interactives en <strong>HTML, CSS, JavaScript</strong> et intégration de vidéos YouTube.
+                </div>
+            </div>
+
+            <div class="site-box">
+                <a href="https://azami8157-sketch.github.io/portfolio/youtube-collab/" target="_blank">
+                    Collaborations YouTube
+                </a>
+                <div class="site-info">
+                    Production de visuels et animations pour des chaînes YouTube, développé avec <strong>HTML, CSS et JS</strong>.
+                </div>
+            </div>
+
         </section>
     </main>
 
