@@ -1,4 +1,4 @@
-// 1. Dropdown menu عملی
+// 1. Dropdown menu
 const menuBtn = document.getElementById("menu-btn");
 const dropdown = document.getElementById("dropdown");
 
@@ -6,14 +6,13 @@ menuBtn.addEventListener("click", function(){
   dropdown.classList.toggle("show");
 });
 
-// بستن منو اگر خارجش کلیک شد
 window.addEventListener("click", function(e){
   if(!menuBtn.contains(e.target) && !dropdown.contains(e.target)){
     dropdown.classList.remove("show");
   }
 });
 
-// 2. Search مواد غذایی
+// 2. Search Box
 const searchInput = document.getElementById('search');
 const tableBody = document.querySelector('tbody');
 
@@ -26,7 +25,7 @@ searchInput.addEventListener('keyup', function(){
     });
 });
 
-// 3. Recipes داده‌ها
+// 3. Recipes data
 const recipes = [
   {name:"Grilled Fish with Lemon Rice", country:"Korea", ingredients:["fish","rice","lemon"], protein:25, carbs:40, fat:8, calories:350},
   {name:"Chicken Fried Rice", country:"China", ingredients:["chicken","rice","egg","onion"], protein:20, carbs:45, fat:10, calories:400},
@@ -40,7 +39,7 @@ const recipes = [
   {name:"Avocado Toast", country:"USA", ingredients:["avocado","bread","oliveoil"], protein:6, carbs:30, fat:12, calories:250}
 ];
 
-// 4. دریافت غذا بر اساس انتخاب
+// 4. Submit form
 const form = document.getElementById('food-form');
 const resultDiv = document.getElementById('result');
 const nutritionDiv = document.getElementById('nutrition');
@@ -54,7 +53,7 @@ form.addEventListener('submit', function(e){
         resultDiv.innerHTML = "No matching recipe found.";
         nutritionDiv.innerHTML = "";
     } else {
-        let recipe = matched[0]; // فقط اولین مورد
+        let recipe = matched[0];
         resultDiv.innerHTML = `<strong>Recipe:</strong> ${recipe.name} (<em>${recipe.country}</em>)`;
         nutritionDiv.innerHTML = `
           <table>
