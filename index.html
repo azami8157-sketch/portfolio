@@ -1,10 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio - Mohamad Amin Azami</title>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Mohamad Amin Azami</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* --- Header --- */
+header {
+  background-color: #27ae60;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 2em;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0 10px;
+  font-size: 1em;
+}
+
+/* --- Sections --- */
+.site-section {
+  padding: 40px 20px;
+  min-height: 100vh;
+  background-color: #111;
+  color: #fff;
+}
+
+.site-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #f1c40f;
+  text-align: center;
+}
+
+/* --- Project Cards --- */
+.site-box {
+  background-color: #222;
+  border: 2px solid #27ae60;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.site-box:hover {
+  transform: scale(1.05);
+}
+
+.site-box a {
+  font-size: 1.5em;
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+.site-box a:hover {
+  text-decoration: underline;
+}
+
+.site-info {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #ecf0f1;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* --- Footer --- */
+.section-footer {
+  margin-top: 40px;
+  background: #e9f7ef;
+  color: #0b4f2f;
+  padding: 10px 14px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(11,79,47,0.08);
+}
+
+/* --- Responsive --- */
+@media(max-width:600px){
+  .site-section h2{font-size:1.5em;}
+  .site-box{padding:15px; max-width:90%;}
+}
+</style>
 </head>
 <body>
 
@@ -22,62 +111,59 @@
 <!-- Projects -->
 <section id="projects" class="site-section">
   <h2>Projects</h2>
-  <div class="projects">
+  <div class="site-box">
     <a href="foodsite/index.html" target="_blank">Food Suggestion</a>
-    <a href="anotherproject/index.html" target="_blank">Another Project</a>
-    <!-- بقیه پروژه‌ها مثل قبل اضافه کن -->
+    <div class="site-info">HTML, CSS et JS pour suggérer des recettes selon les ingrédients.</div>
   </div>
-  <footer class="section-footer">
-    © 2025 Portfolio Mohamad Amin Azami
-  </footer>
+  <div class="site-box">
+    <a href="anotherproject/index.html" target="_blank">Another Project</a>
+    <div class="site-info">Description de ton autre projet.</div>
+  </div>
+  <footer class="section-footer">© 2025 Portfolio Mohamad Amin Azami</footer>
 </section>
 
 <!-- YouTube -->
 <section id="youtube" class="site-section">
   <h2>YouTube</h2>
-  <div class="projects">
+  <div class="site-box">
     <a href="https://www.youtube.com/channel/yourchannel" target="_blank">My YouTube Channel</a>
-    <!-- لینک ویدیوها یا پلی‌لیست‌ها -->
+    <div class="site-info">Chaîne avec mes vidéos et tutoriels.</div>
   </div>
-  <footer class="section-footer">
-    © 2025 Portfolio Mohamad Amin Azami
-  </footer>
+  <footer class="section-footer">© 2025 Portfolio Mohamad Amin Azami</footer>
 </section>
 
 <!-- Coursera -->
 <section id="coursera" class="site-section">
   <h2>Coursera</h2>
-  <div class="projects">
-    <a href="https://www.coursera.org/account/accomplishments/certificate/XXXXX" target="_blank">Coursera Certificate 1</a>
-    <a href="https://www.coursera.org/account/accomplishments/certificate/YYYYY" target="_blank">Coursera Certificate 2</a>
+  <div class="site-box">
+    <a href="https://www.coursera.org/account/accomplishments/certificate/XXXXX" target="_blank">Certificate 1</a>
+    <div class="site-info">Cours suivi sur Coursera.</div>
   </div>
-  <footer class="section-footer">
-    © 2025 Portfolio Mohamad Amin Azami
-  </footer>
+  <footer class="section-footer">© 2025 Portfolio Mohamad Amin Azami</footer>
 </section>
 
 <!-- Animation 2D/3D -->
 <section id="animation" class="site-section">
   <h2>Animation 2D/3D</h2>
-  <div class="projects">
+  <div class="site-box">
     <a href="animation2d/index.html" target="_blank">Animation 2D</a>
-    <a href="animation3d/index.html" target="_blank">Animation 3D</a>
+    <div class="site-info">Animation 2D réalisée avec ...</div>
   </div>
-  <footer class="section-footer">
-    © 2025 Portfolio Mohamad Amin Azami
-  </footer>
+  <div class="site-box">
+    <a href="animation3d/index.html" target="_blank">Animation 3D</a>
+    <div class="site-info">Animation 3D réalisée avec ...</div>
+  </div>
+  <footer class="section-footer">© 2025 Portfolio Mohamad Amin Azami</footer>
 </section>
 
 <!-- Site Web Personnel -->
 <section id="siteweb" class="site-section">
   <h2>Site Web Personnel</h2>
-  <div class="projects">
+  <div class="site-box">
     <a href="foodsite/index.html" target="_blank">Food Suggestion</a>
-    <!-- سایر سایت‌های شخصی -->
+    <div class="site-info">Mon site personnel de suggestion de recettes.</div>
   </div>
-  <footer class="section-footer">
-    © 2025 Portfolio Mohamad Amin Azami
-  </footer>
+  <footer class="section-footer">© 2025 Portfolio Mohamad Amin Azami</footer>
 </section>
 
 </body>
