@@ -1,120 +1,83 @@
-/* --- Reset --- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* --- Body --- */
+/* تنظیمات کلی صفحه */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  background-color: #111;
-  color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
 }
 
-/* --- Header --- */
 header {
-  background-color: #27ae60;
-  padding: 20px;
-  text-align: center;
+    background-color: #27ae60;
+    padding: 20px;
+    text-align: center;
 }
 
 header h1 {
-  color: #fff;
-  margin-bottom: 10px;
-  font-size: 2em;
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
 }
 
-header nav a {
-  color: #fff;
-  text-decoration: underline;
-  margin: 0 10px;
-  font-size: 1em;
+header a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 1em;
 }
 
-header nav a:hover {
-  opacity: 0.8;
-}
-
-/* --- Sections --- */
-.site-section {
-  padding: 40px 20px;
-  min-height: 100vh;
-}
-
-.site-section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #f1c40f;
-  text-align: center;
-}
-
-/* --- Project Cards --- */
+/* کارت پروژه ها */
 .site-box {
-  background-color: #222;
-  border: 2px solid #27ae60;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 600px;
-  transition: transform 0.2s;
-  text-align: center;
+    background-color: #222;
+    border: 2px solid #27ae60;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    display: flex;       /* تصویر و متن کنار هم */
+    align-items: center; /* وسط چین عمودی */
+    transition: transform 0.2s;
 }
 
 .site-box:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
+/* تصویر داخل کارت */
+.site-box img {
+    width: 60px;        /* عرض مربع کوچک */
+    height: 60px;       /* ارتفاع برابر عرض */
+    object-fit: cover;  /* تصویر داخل مربع کامل پر شود */
+    border-radius: 8px; /* گوشه‌های کمی گرد */
+    margin-right: 15px; /* فاصله از متن */
+}
+
+/* لینک پروژه */
 .site-box a {
-  font-size: 1.5em;
-  color: #f1c40f;
-  text-decoration: none;
+    font-size: 1.2em;
+    color: #f1c40f;
+    text-decoration: none;
 }
 
 .site-box a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
+/* توضیح پروژه */
 .site-info {
-  margin-top: 10px;
-  font-size: 1em;
-  color: #ecf0f1;
-  background-color: #333;
-  padding: 10px;
-  border-radius: 5px;
+    font-size: 1em;
+    color: #ecf0f1;
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
 }
 
-/* --- Footer هر سکشن --- */
-.section-footer {
-  margin-top: 40px;
-  background: #e9f7ef;
-  color: #0b4f2f;
-  padding: 10px 14px;
-  text-align: center;
-  font-size: 14px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(11,79,47,0.08);
-}
-
-/* --- Responsive --- */
-@media (max-width: 768px) {
-  header nav a {
-    display: inline-block;
-    margin: 6px;
-    font-size: 14px;
-  }
-
-  .site-box {
-    max-width: 90%;
-    padding: 15px;
-  }
-
-  .site-section h2 {
-    font-size: 1.5em;
-  }
-
-  .site-info {
-    font-size: 0.9em;
-  }
+/* فوتر */
+footer, .section-footer {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #27ae60;
+    color: #fff;
+    text-align: center;
 }
