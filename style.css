@@ -1,110 +1,89 @@
-/* ===== استایل کلی سایت ===== */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
+/* ریست کلی برای استایل پایه */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* هدر بالا */
 header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+  background: #0b4f2f;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2em;
+  margin-bottom: 10px;
 }
 
-header p {
-    margin: 5px 0 0 0;
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
 }
 
-/* ===== بخش Projects ===== */
-section#projects {
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px auto;
-    max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+nav a:hover {
+  text-decoration: underline;
 }
 
-section#projects h2 {
-    color: #4CAF50;
+/* استایل سکشن‌ها */
+.site-section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* هر سکشن ارتفاع کامل صفحه */
+  padding: 40px 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
 }
 
-section#projects h3 {
-    color: #2196F3; /* رنگ متفاوت برای زیرسکشن‌ها */
-    margin-top: 30px;
+.site-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #0b4f2f;
 }
 
-section#projects ul {
-    list-style-type: none;
-    padding: 0;
+.site-section p {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-section#projects li {
-    margin: 15px 0;
-    display: flex;
-    align-items: center;
+/* فوتر داخل هر سکشن */
+.section-footer {
+  margin-top: auto; /* فوتر همیشه پایین سکشن */
+  background: #e9f7ef; /* سبز کم‌رنگ */
+  color: #0b4f2f;
+  padding: 10px 14px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(11,79,47,0.08);
 }
 
-section#projects li img {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
-}
+@media (max-width: 600px) {
+  .site-section {
+    padding: 20px 15px;
+  }
 
-section#projects li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
+  .site-section h2 {
+    font-size: 22px;
+  }
 
-section#projects li a:hover {
-    color: #4CAF50;
-}
+  .site-section p {
+    font-size: 14px;
+  }
 
-/* ===== بخش YouTube ===== */
-#projects li img[alt="YouTube"] {
-    width: 50px;
-    height: 50px;
-}
-
-/* ===== بخش Coursera ===== */
-#projects li img[alt="Coursera"] {
-    width: 50px;
-    height: 50px;
-}
-
-#projects li a[href="coursera.html"] {
-    color: #2196F3;
-}
-
-#projects li a[href="coursera.html"]:hover {
-    color: #0b7dda;
-    text-decoration: underline;
-}
-
-/* ===== بخش Contact ===== */
-section#contact {
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px auto 40px auto;
-    max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-section#contact a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-section#contact a:hover {
-    text-decoration: underline;
+  .section-footer {
+    font-size: 13px;
+    padding: 8px 10px;
+    border-radius: 6px;
+  }
 }
