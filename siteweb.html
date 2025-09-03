@@ -1,92 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Web Personnel – Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        header {
-            background-color: #27ae60; /* سبز مشابه Animation 2D/3D */
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-            color: #fff;
-        }
-        header a {
-            display: inline-block;
-            margin-top: 10px;
-            color: #fff;
-            text-decoration: underline;
-            font-size: 1em;
-        }
-
-        main {
-            padding: 20px;
-            text-align: center;
-            background-color: #111;
-            color: #fff;
-        }
-
-        .site-box {
-            background-color: #222;
-            border: 2px solid #27ae60;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 600px;
-            transition: transform 0.2s;
-        }
-        .site-box:hover {
-            transform: scale(1.05);
-        }
-        .site-box a {
-            font-size: 1.5em;
-            color: #f1c40f;
-            text-decoration: none;
-        }
-        .site-box a:hover {
-            text-decoration: underline;
-        }
-        .site-info {
-            margin-top: 10px;
-            font-size: 1em;
-            color: #ecf0f1;
-            background-color: #333;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        footer {
-            margin-top: 40px;
-            padding: 10px;
-            background-color: #27ae60;
-            color: #fff;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Web Personnel – Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Site Web Personnel</h1>
-        <a href="index.html">Retour au portfolio</a>
-    </header>
 
-    <main>
-        <div class="site-box">
-            <a href="https://azami8157-sketch.github.io/portfolio/foodsite/" target="_blank">
-                Food Suggestion
-            </a>
-            <div class="site-info">
-                Ce site a été développé avec <strong>HTML, CSS et JavaScript</strong> pour suggérer des recettes selon les ingrédients disponibles.
-            </div>
-        </div>
-    </main>
+<header>
+  <h1>Site Web Personnel</h1>
+  <a href="index.html">Retour au portfolio</a>
+</header>
 
-    <footer>
-        <p>© 2025 Portfolio Mohamad Amin Azami</p>
-    </footer>
+<main>
+  <div class="site-box">
+    <a href="foodsite/index.html" target="_blank">Food Suggestion</a>
+    <div class="site-info">
+      HTML, CSS et JS pour suggérer des recettes selon les ingrédients disponibles.
+    </div>
+  </div>
+
+  <div class="site-box">
+    <a href="anotherproject/index.html" target="_blank">Another Personal Project</a>
+    <div class="site-info">
+      Description de ton autre projet personnel.
+    </div>
+  </div>
+</main>
+
+<footer class="section-footer">
+  © 2025 Portfolio Mohamad Amin Azami
+</footer>
+
 </body>
 </html>
