@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Campus France</title>
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <!-- CSS اصلی -->
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Campus France</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenue sur mon portfolio</h1>
-        <p>Projets web, animations et collaborations multimédia pour Campus France</p>
-    </header>
 
-    <section id="projects">
-        <h2>Projets</h2>
-        <ul>
-            <li>
-                <img src="cover.svg" alt="Site web personnel">
-                <span>
-                    <a href="siteweb.html">Site web personnel – Développement front-end (HTML, CSS, JS)</a>
-                </span>
-            </li>
-            <li>
-                <img src="placeholder-animation.svg" alt="Animation">
-                <span>
-                    <a href="animation.html">Animation 2D/3D – Storyboard et motion design</a>
-                </span>
-            </li>
-            <li>
-                <img src="placeholder-youtube.svg" alt="YouTube">
-                <span>
-                    <a href="youtube.html">Collaborations YouTube – Création de visuels et animations</a>
-                </span>
-            </li>
-            <li>
-                <img src="coursera.svg" alt="Coursera">
-                <span>
-                    <a href="coursera.html">Certificats Coursera – Mes formations en ligne</a>
-                </span>
-            </li>
-        </ul>
-    </section>
+<header>
+  <h1>Bienvenue sur mon portfolio</h1>
+  <p>Projets web, animations et collaborations multimédia pour Campus France</p>
+</header>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email : ton.email@example.com</p>
-        <p>CV : <a href="CV_[Ton_Nom].pdf" target="_blank">Télécharger</a></p>
-    </section>
+<main>
+  <section id="projects" class="site-section">
+    <h2>Projets</h2>
 
-    <!-- فایل JS -->
-    <script src="script.js"></script>
+    <div class="site-box">
+      <img src="cover.svg" alt="Site web personnel">
+      <div>
+        <a href="siteweb.html">Site web personnel – Développement front-end (HTML, CSS, JS)</a>
+        <div class="site-info">Projet front-end pour Campus France.</div>
+      </div>
+    </div>
+
+    <div class="site-box">
+      <img src="placeholder-animation.svg" alt="Animation">
+      <div>
+        <a href="animation.html">Animation 2D/3D – Storyboard et motion design</a>
+        <div class="site-info">Création d'animations et storyboard.</div>
+      </div>
+    </div>
+
+    <div class="site-box">
+      <img src="placeholder-youtube.svg" alt="YouTube">
+      <div>
+        <a href="youtube.html">Collaborations YouTube – Création de visuels et animations</a>
+        <div class="site-info">Vidéos et visuels pour projets YouTube.</div>
+      </div>
+    </div>
+
+    <div class="site-box">
+      <img src="coursera.svg" alt="Coursera">
+      <div>
+        <a href="coursera.html">Certificats Coursera – Mes formations en ligne</a>
+        <div class="site-info">Certificats obtenus sur Coursera.</div>
+      </div>
+    </div>
+
+    <footer class="section-footer">
+      © 2025 Portfolio Mohamad Amin Azami
+    </footer>
+  </section>
+</main>
+
 </body>
 </html>
