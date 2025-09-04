@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Animation</title>
-<style>
 /* ===== تنظیمات کلی ===== */
 body {
     margin: 0;
@@ -45,6 +38,7 @@ header a {
     border: none;
     border-radius: 5px;
     font-weight: bold;
+    z-index: 1000; /* همیشه بالای همه عناصر */
 }
 
 /* کارت پروژه ها */
@@ -124,50 +118,3 @@ body.light-mode .site-info {
 body.light-mode a {
     color: #1a73e8;
 }
-</style>
-</head>
-<body>
-
-<!-- دکمه سوئیچ لایت/دارک -->
-<button id="theme-toggle">Light Mode</button>
-
-<header>
-  <h1>Portfolio Animation</h1>
-  <a href="index.html">Retour au portfolio</a>
-</header>
-
-<main>
-
-  <div class="site-box">
-    <img src="https://img.youtube.com/vi/DD4epa4QaUo/hqdefault.jpg" alt="Présentation de mon CV">
-    <div>
-      <a href="#" target="_blank">Présentation de mon CV</a>
-      <div class="site-info">Présentation de son CV.</div>
-    </div>
-  </div>
-
-  <div class="site-box">
-    <img src="https://img.youtube.com/vi/Nxy-uicobdU/hqdefault.jpg" alt="Animation graphique du logo">
-    <div>
-      <a href="#" target="_blank">Animation graphique du logo</a>
-      <div class="site-info">Animation graphique du logo.</div>
-    </div>
-  </div>
-
-  <footer class="section-footer">
-    © 2025 Portfolio Mohamad Amin Azami
-  </footer>
-
-</main>
-
-<script>
-// سوئیچ دارک/لایت مود
-const toggle = document.getElementById('theme-toggle');
-toggle.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-    toggle.textContent = document.body.classList.contains('light-mode') ? 'Dark Mode' : 'Light Mode';
-});
-</script>
-
-</body>
-</html>
