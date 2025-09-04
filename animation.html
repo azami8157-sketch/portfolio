@@ -1,147 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animation Portfolio</title>
-  <link rel="stylesheet" href="style.css"> <!-- استایل اصلی سایت -->
-  <style>
-    /* متن معرفی به زبان سوم شخص */
-    .intro-material {
-      font-family: 'Arial', sans-serif;
-      font-size: 1.3em;
-      font-weight: bold;
-      color: #222;
-      text-align: center;
-      margin: 30px 10px;
-    }
-
-    /* Grid container */
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 0 10px;
-    }
-
-    .animation-video {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      text-align: center;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .animation-video:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-
-    .animation-video img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .animation-video h3 {
-      font-size: 1.1em;
-      margin: 10px 0 5px 0;
-    }
-
-    .animation-video a {
-      display: inline-block;
-      margin-bottom: 10px;
-      color: #1a73e8;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .animation-video a:hover {
-      text-decoration: underline;
-    }
-
-    @media(max-width: 500px) {
-      .intro-material {
-        font-size: 1.1em;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Animation</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .site-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .site-box a {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  .site-box a:hover {
+    text-decoration: underline;
+  }
+  .site-info {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 15px;
+  }
+</style>
 </head>
 <body>
 
-  <!-- هدر سایت (همان هدر pages site web personnel) -->
-  <header>
-    <div class="header-container">
-      <div class="logo">
-        <a href="index.html">Mohamad Amin Azami</a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="animation.html">Animation</a></li>
-          <li><a href="youtube.html">YouTube</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header>
+  <h1>Portfolio Animation</h1>
+  <a href="index.html">Retour au portfolio</a>
+</header>
 
-  <!-- متن معرفی -->
-  <p class="intro-material">
-    Tout le contenu de cette page a été créé et produit par Mohamad Amin Azami.
-  </p>
+<main>
 
-  <!-- Grid ویدیوها -->
-  <div class="video-grid">
-
-    <div class="animation-video">
+  <div class="site-box">
+    <div>
       <a href="https://youtu.be/DD4epa4QaUo?si=fOYNAw4T4waBr3Pb" target="_blank">
         <img src="https://img.youtube.com/vi/DD4epa4QaUo/hqdefault.jpg" alt="Présentation de mon CV">
       </a>
-      <h3>Présentation de mon CV</h3>
-      <a href="https://youtu.be/DD4epa4QaUo?si=fOYNAw4T4waBr3Pb" target="_blank">Voir la vidéo</a>
+      <a href="https://youtu.be/DD4epa4QaUo?si=fOYNAw4T4waBr3Pb" target="_blank">Présentation de mon CV</a>
+      <div class="site-info">Présentation de son CV.</div>
     </div>
+  </div>
 
-    <div class="animation-video">
+  <div class="site-box">
+    <div>
       <a href="https://youtu.be/Nxy-uicobdU?si=gVOx4_OSkMYMqfKD" target="_blank">
         <img src="https://img.youtube.com/vi/Nxy-uicobdU/hqdefault.jpg" alt="Animation graphique du logo">
       </a>
-      <h3>Animation graphique du logo</h3>
-      <a href="https://youtu.be/Nxy-uicobdU?si=gVOx4_OSkMYMqfKD" target="_blank">Voir la vidéo</a>
+      <a href="https://youtu.be/Nxy-uicobdU?si=gVOx4_OSkMYMqfKD" target="_blank">Animation graphique du logo</a>
+      <div class="site-info">Animation graphique du logo.</div>
     </div>
+  </div>
 
-    <div class="animation-video">
+  <div class="site-box">
+    <div>
       <a href="https://youtu.be/PJXRYWJhzb0?si=fYYmJjX10m8HIOBn" target="_blank">
         <img src="https://img.youtube.com/vi/PJXRYWJhzb0/hqdefault.jpg" alt="Publicité numérique animée">
       </a>
-      <h3>Publicité numérique animée</h3>
-      <a href="https://youtu.be/PJXRYWJhzb0?si=fYYmJjX10m8HIOBn" target="_blank">Voir la vidéo</a>
+      <a href="https://youtu.be/PJXRYWJhzb0?si=fYYmJjX10m8HIOBn" target="_blank">Publicité numérique animée</a>
+      <div class="site-info">Publicité numérique animée.</div>
     </div>
+  </div>
 
-    <div class="animation-video">
+  <div class="site-box">
+    <div>
       <a href="https://youtu.be/IufbqPlINyA?si=J07Yx6AGYjLlBysc" target="_blank">
         <img src="https://img.youtube.com/vi/IufbqPlINyA/hqdefault.jpg" alt="Animation illustrée">
       </a>
-      <h3>Animation illustrée</h3>
-      <a href="https://youtu.be/IufbqPlINyA?si=J07Yx6AGYjLlBysc" target="_blank">Voir la vidéo</a>
+      <a href="https://youtu.be/IufbqPlINyA?si=J07Yx6AGYjLlBysc" target="_blank">Animation illustrée</a>
+      <div class="site-info">Animation illustrée.</div>
     </div>
-
   </div>
 
-  <!-- فوتر سایت (همان فوتر pages site web personnel) -->
-  <footer>
-    <div class="footer-container">
-      <p>&copy; 2025 Mohamad Amin Azami. Tous droits réservés.</p>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="animation.html">Animation</a></li>
-        <li><a href="youtube.html">YouTube</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
+  <footer class="section-footer">
+    © 2025 Portfolio Mohamad Amin Azami
   </footer>
+
+</main>
 
 </body>
 </html>
