@@ -1,83 +1,98 @@
-/* تنظیمات کلی صفحه */
+/* ===== سبک عمومی ===== */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #111;
-    color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #222222;
 }
 
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* هدر */
 header {
-    background-color: #27ae60;
-    padding: 20px;
-    text-align: center;
+  background-color: #f5f5f5;
+  padding: 15px 20px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2em;
-    color: #fff;
+  margin: 0;
+  font-size: 1.8em;
 }
 
 header a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #fff;
-    text-decoration: underline;
-    font-size: 1em;
-}
-
-/* کارت پروژه ها */
-.site-box {
-    background-color: #222;
-    border: 2px solid #27ae60;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 600px;
-    display: flex;       /* تصویر و متن کنار هم */
-    align-items: center; /* وسط چین عمودی */
-    transition: transform 0.2s;
-}
-
-.site-box:hover {
-    transform: scale(1.05);
-}
-
-/* تصویر داخل کارت */
-.site-box img {
-    width: 60px;        /* عرض مربع کوچک */
-    height: 60px;       /* ارتفاع برابر عرض */
-    object-fit: cover;  /* تصویر داخل مربع کامل پر شود */
-    border-radius: 8px; /* گوشه‌های کمی گرد */
-    margin-right: 15px; /* فاصله از متن */
-}
-
-/* لینک پروژه */
-.site-box a {
-    font-size: 1.2em;
-    color: #f1c40f;
-    text-decoration: none;
-}
-
-.site-box a:hover {
-    text-decoration: underline;
-}
-
-/* توضیح پروژه */
-.site-info {
-    font-size: 1em;
-    color: #ecf0f1;
-    background-color: #333;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-top: 5px;
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 0.95em;
 }
 
 /* فوتر */
 footer, .section-footer {
-    margin-top: 40px;
-    padding: 10px;
-    background-color: #27ae60;
-    color: #fff;
-    text-align: center;
+  background-color: #f5f5f5;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* باکس‌ها */
+.site-box {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 15px auto;
+  max-width: 600px;
+  background-color: #ffffff;
+}
+
+.site-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.site-box a {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.site-info {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* ===== دارک مود ===== */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111111;
+    color: #eeeeee;
+  }
+
+  a {
+    color: #4da6ff;
+  }
+
+  header, footer, .section-footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+  }
+
+  .site-box {
+    border-color: #333333;
+    background-color: #1c1c1c;
+  }
+
+  .site-info {
+    color: #bbb;
+  }
 }
