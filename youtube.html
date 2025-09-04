@@ -4,121 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio YouTube</title>
-  <link rel="stylesheet" href="style.css"> <!-- استایل اصلی سایت -->
+  <link rel="stylesheet" href="style.css"> <!-- فرض می‌کنیم استایل اصلی سایت -->
   <style>
-    body {
-      font-family: 'Helvetica', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-      color: #333;
-    }
-
-    /* متن معرفی با فونت متفاوت و مرکز صفحه */
+    /* متن معرفی با فونت متفاوت */
     .intro-material {
-      font-family: 'Arial', sans-serif;
-      font-size: 1.3em;
+      font-family: 'Arial', sans-serif; /* فونت متفاوت از هدر */
+      font-size: 1.2em; /* کمی بزرگ‌تر */
       font-weight: bold;
-      color: #222;
+      color: #333;
       text-align: center;
-      margin: 30px 10px;
+      margin: 20px 0;
     }
 
-    /* Grid container */
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 0 10px;
-    }
-
+    /* بلوک ویدیو */
     .youtube-video {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      text-align: center;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .youtube-video:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-
-    .youtube-video img {
-      width: 100%;
-      height: auto;
-      display: block;
+      margin: 20px auto;
+      padding: 10px;
+      max-width: 600px;
+      border-bottom: 1px solid #ccc;
     }
 
     .youtube-video h3 {
+      font-family: 'Verdana', sans-serif;
       font-size: 1.1em;
-      margin: 10px 0 5px 0;
+      margin-bottom: 5px;
     }
 
     .youtube-video a {
-      display: inline-block;
-      margin-bottom: 10px;
       color: #1a73e8;
       text-decoration: none;
-      font-weight: bold;
     }
 
     .youtube-video a:hover {
       text-decoration: underline;
     }
-
-    @media(max-width: 500px) {
-      .intro-material {
-        font-size: 1.1em;
-      }
-    }
   </style>
 </head>
 <body>
-
   <!-- متن معرفی به زبان سوم شخص -->
   <p class="intro-material">
     Tout le contenu de cette page a été créé et produit par Mohamad Amin Azami.
   </p>
 
-  <!-- Grid ویدیوها -->
-  <div class="video-grid">
+  <!-- بلوک‌های ویدیو -->
+  <div class="youtube-video">
+    <h3>Présentation de mon CV</h3>
+    <a href="https://youtu.be/DD4epa4QaUo?si=fOYNAw4T4waBr3Pb" target="_blank">Voir la vidéo</a>
+  </div>
 
-    <div class="youtube-video">
-      <a href="https://youtu.be/DD4epa4QaUo?si=fOYNAw4T4waBr3Pb" target="_blank">
-        <img src="https://img.youtube.com/vi/DD4epa4QaUo/hqdefault.jpg" alt="Présentation de mon CV">
-      </a>
-      <h3>Présentation de mon CV</h3>
-      <a href="https://youtu.be/DD4epa4QaUo?si=fOYNAw4T4waBr3Pb" target="_blank">Voir la vidéo</a>
-    </div>
+  <div class="youtube-video">
+    <h3>Animation graphique du logo</h3>
+    <a href="https://youtu.be/Nxy-uicobdU?si=gVOx4_OSkMYMqfKD" target="_blank">Voir la vidéo</a>
+  </div>
 
-    <div class="youtube-video">
-      <a href="https://youtu.be/Nxy-uicobdU?si=gVOx4_OSkMYMqfKD" target="_blank">
-        <img src="https://img.youtube.com/vi/Nxy-uicobdU/hqdefault.jpg" alt="Animation graphique du logo">
-      </a>
-      <h3>Animation graphique du logo</h3>
-      <a href="https://youtu.be/Nxy-uicobdU?si=gVOx4_OSkMYMqfKD" target="_blank">Voir la vidéo</a>
-    </div>
+  <div class="youtube-video">
+    <h3>Publicité numérique animée</h3>
+    <a href="https://youtu.be/PJXRYWJhzb0?si=fYYmJjX10m8HIOBn" target="_blank">Voir la vidéo</a>
+  </div>
 
-    <div class="youtube-video">
-      <a href="https://youtu.be/PJXRYWJhzb0?si=fYYmJjX10m8HIOBn" target="_blank">
-        <img src="https://img.youtube.com/vi/PJXRYWJhzb0/hqdefault.jpg" alt="Publicité numérique animée">
-      </a>
-      <h3>Publicité numérique animée</h3>
-      <a href="https://youtu.be/PJXRYWJhzb0?si=fYYmJjX10m8HIOBn" target="_blank">Voir la vidéo</a>
-    </div>
-
-    <div class="youtube-video">
-      <a href="https://youtu.be/IufbqPlINyA?si=J07Yx6AGYjLlBysc" target="_blank">
-        <img src="https://img.youtube.com/vi/IufbqPlINyA/hqdefault.jpg" alt="Animation illustrée">
-      </a>
-      <h3>Animation illustrée</h3>
-      <a href="https://youtu.be/IufbqPlINyA?si=J07Yx6AGYjLlBysc" target="_blank">Voir la vidéo</a>
-    </div>
-
+  <div class="youtube-video">
+    <h3>Animation illustrée</h3>
+    <a href="https://youtu.be/IufbqPlINyA?si=J07Yx6AGYjLlBysc" target="_blank">Voir la vidéo</a>
   </div>
 
 </body>
