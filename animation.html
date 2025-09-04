@@ -1,37 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Animation 2D/3D – Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Portfolio</title>
+  <link rel="stylesheet" href="style.css"> <!-- استایل اصلی سایت -->
+  <style>
+    body {
+      font-family: 'Helvetica', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    /* متن معرفی به زبان سوم شخص */
+    .intro-material {
+      font-family: 'Arial', sans-serif;
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #222;
+      text-align: center;
+      margin: 30px 10px;
+    }
+
+    /* Grid container */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 10px;
+    }
+
+    .animation-video {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .animation-video:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .animation-video img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .animation-video h3 {
+      font-size: 1.1em;
+      margin: 10px 0 5px 0;
+    }
+
+    .animation-video a {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .animation-video a:hover {
+      text-decoration: underline;
+    }
+
+    @media(max-width: 500px) {
+      .intro-material {
+        font-size: 1.1em;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>Animation 2D/3D</h1>
-  <a href="index.html">Retour au portfolio</a>
-</header>
+  <!-- متن معرفی -->
+  <p class="intro-material">
+    Tout le contenu de cette page a été créé et produit par Mohamad Amin Azami.
+  </p>
 
-<main>
-  <div class="site-box">
-    <div>
-      <a href="animation2d/index.html" target="_blank">Animation 2D</a>
-      <div class="site-info">Storyboard et animation 2D.</div>
+  <!-- Grid ویدیوها -->
+  <div class="video-grid">
+
+    <div class="animation-video">
+      <a href="https://youtu.be/DD4epa4QaUo?si=fOYNAw4T4waBr3Pb" target="_blank">
+        <img src="https://img.youtube.com/vi/DD4epa4QaUo/hqdefault.jpg" alt="Présentation de mon CV">
+      </a>
+      <h3>Présentation de mon CV</h3>
+      <a href="https://youtu.be/DD4epa4QaUo?si=fOYNAw4T4waBr3Pb" target="_blank">Voir la vidéo</a>
     </div>
-  </div>
 
-  <div class="site-box">
-    <div>
-      <a href="animation3d/index.html" target="_blank">Animation 3D</a>
-      <div class="site-info">Modélisation et animation 3D.</div>
+    <div class="animation-video">
+      <a href="https://youtu.be/Nxy-uicobdU?si=gVOx4_OSkMYMqfKD" target="_blank">
+        <img src="https://img.youtube.com/vi/Nxy-uicobdU/hqdefault.jpg" alt="Animation graphique du logo">
+      </a>
+      <h3>Animation graphique du logo</h3>
+      <a href="https://youtu.be/Nxy-uicobdU?si=gVOx4_OSkMYMqfKD" target="_blank">Voir la vidéo</a>
     </div>
-  </div>
 
-  <footer class="section-footer">
-    © 2025 Portfolio Mohamad Amin Azami
-  </footer>
-</main>
+    <div class="animation-video">
+      <a href="https://youtu.be/PJXRYWJhzb0?si=fYYmJjX10m8HIOBn" target="_blank">
+        <img src="https://img.youtube.com/vi/PJXRYWJhzb0/hqdefault.jpg" alt="Publicité numérique animée">
+      </a>
+      <h3>Publicité numérique animée</h3>
+      <a href="https://youtu.be/PJXRYWJhzb0?si=fYYmJjX10m8HIOBn" target="_blank">Voir la vidéo</a>
+    </div>
+
+    <div class="animation-video">
+      <a href="https://youtu.be/IufbqPlINyA?si=J07Yx6AGYjLlBysc" target="_blank">
+        <img src="https://img.youtube.com/vi/IufbqPlINyA/hqdefault.jpg" alt="Animation illustrée">
+      </a>
+      <h3>Animation illustrée</h3>
+      <a href="https://youtu.be/IufbqPlINyA?si=J07Yx6AGYjLlBysc" target="_blank">Voir la vidéo</a>
+    </div>
+
+  </div>
 
 </body>
 </html>
