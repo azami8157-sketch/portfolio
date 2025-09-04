@@ -1,9 +1,17 @@
-/* تنظیمات کلی صفحه */
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Animation</title>
+<style>
+/* ===== تنظیمات کلی ===== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #111;
+    background-color: #111; /* پیش‌فرض دارک */
     color: #fff;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 header {
@@ -26,6 +34,19 @@ header a {
     font-size: 1em;
 }
 
+/* سوئیچ لایت/دارک */
+#theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
 /* کارت پروژه ها */
 .site-box {
     background-color: #222;
@@ -34,25 +55,23 @@ header a {
     padding: 20px;
     margin: 20px auto;
     max-width: 600px;
-    display: flex;       /* تصویر و متن کنار هم */
-    align-items: center; /* وسط چین عمودی */
-    transition: transform 0.2s;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s, background-color 0.3s, border-color 0.3s;
 }
 
 .site-box:hover {
     transform: scale(1.05);
 }
 
-/* تصویر داخل کارت */
 .site-box img {
-    width: 60px;        /* عرض مربع کوچک */
-    height: 60px;       /* ارتفاع برابر عرض */
-    object-fit: cover;  /* تصویر داخل مربع کامل پر شود */
-    border-radius: 8px; /* گوشه‌های کمی گرد */
-    margin-right: 15px; /* فاصله از متن */
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
 }
 
-/* لینک پروژه */
 .site-box a {
     font-size: 1.2em;
     color: #f1c40f;
@@ -63,7 +82,6 @@ header a {
     text-decoration: underline;
 }
 
-/* توضیح پروژه */
 .site-info {
     font-size: 1em;
     color: #ecf0f1;
@@ -81,3 +99,75 @@ footer, .section-footer {
     color: #fff;
     text-align: center;
 }
+
+/* ===== حالت لایت مود ===== */
+body.light-mode {
+    background-color: #ffffff;
+    color: #222;
+}
+
+body.light-mode header {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+body.light-mode .site-box {
+    background-color: #f5f5f5;
+    border-color: #27ae60;
+}
+
+body.light-mode .site-info {
+    background-color: #ddd;
+    color: #222;
+}
+
+body.light-mode a {
+    color: #1a73e8;
+}
+</style>
+</head>
+<body>
+
+<!-- دکمه سوئیچ لایت/دارک -->
+<button id="theme-toggle">Light Mode</button>
+
+<header>
+  <h1>Portfolio Animation</h1>
+  <a href="index.html">Retour au portfolio</a>
+</header>
+
+<main>
+
+  <div class="site-box">
+    <img src="https://img.youtube.com/vi/DD4epa4QaUo/hqdefault.jpg" alt="Présentation de mon CV">
+    <div>
+      <a href="#" target="_blank">Présentation de mon CV</a>
+      <div class="site-info">Présentation de son CV.</div>
+    </div>
+  </div>
+
+  <div class="site-box">
+    <img src="https://img.youtube.com/vi/Nxy-uicobdU/hqdefault.jpg" alt="Animation graphique du logo">
+    <div>
+      <a href="#" target="_blank">Animation graphique du logo</a>
+      <div class="site-info">Animation graphique du logo.</div>
+    </div>
+  </div>
+
+  <footer class="section-footer">
+    © 2025 Portfolio Mohamad Amin Azami
+  </footer>
+
+</main>
+
+<script>
+// سوئیچ دارک/لایت مود
+const toggle = document.getElementById('theme-toggle');
+toggle.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    toggle.textContent = document.body.classList.contains('light-mode') ? 'Dark Mode' : 'Light Mode';
+});
+</script>
+
+</body>
+</html>
