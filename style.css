@@ -1,4 +1,4 @@
-/* ===== سبک عمومی ===== */
+/* ===== سبک عمومی (Light Mode پیش‌فرض) ===== */
 body {
   margin: 0;
   padding: 0;
@@ -20,6 +20,7 @@ a:hover {
 header {
   background-color: #f5f5f5;
   padding: 15px 20px;
+  text-align: center; /* عنوان و لینک وسط‌چین */
 }
 
 header h1 {
@@ -45,7 +46,6 @@ footer, .section-footer {
 /* باکس‌ها */
 .site-box {
   border: 1px solid #ddd;
-  border-radius: 6px;
   padding: 10px;
   margin: 15px auto;
   max-width: 600px;
@@ -55,7 +55,6 @@ footer, .section-footer {
 .site-box img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
   margin-bottom: 5px;
 }
 
