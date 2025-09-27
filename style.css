@@ -118,3 +118,16 @@ body.light-mode .site-info {
 body.light-mode a {
     color: #1a73e8;
 }
+
+body.light-mode a {
+    color: #1a73e8;
+}
+
+/* ===== تصویر پروفایل کانال های یوتیوب ===== */
+.channel-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
